@@ -1,7 +1,10 @@
 
 
 set tabstop=4
+set shiftwidth=4
+
 set number relativenumber
+
 inoremap jk <Esc>
 inoremap kj <Esc>
 
