@@ -18,7 +18,7 @@ local DEFAULT_SETTINGS = {
 		"jdtls",
 		"tsserver",
 		"ltex",
-		"marksman",
+		--"marksman", ltex includes markdown
 		"pyright",
 		"sqlls",
 		"rust_analyzer",
