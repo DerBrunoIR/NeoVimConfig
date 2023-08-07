@@ -7,6 +7,8 @@ set number relativenumber
 
 inoremap jk <Esc>
 inoremap kj <Esc>
+vnoremap jk <Esc>
+vnoremap kj <Esc>
 
 call plug#begin()
 Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
@@ -36,7 +38,7 @@ lua require("setup-catppuccin")
 lua require("setup-treesitter")
 
 "lsp config
-lua require("setup-lspconfig")
+"lua require("setup-lspconfig")
 "mason 
 lua require("setup-mason")
 "mason-lspconfig
@@ -44,4 +46,7 @@ lua require("setup-mason-lspconfig")
 
 "cmp
 lua require("setup-cmp")
+
+"setup lsp's 
+lua require("setup-language-servers")
 
