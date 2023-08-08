@@ -53,7 +53,7 @@ lua require("setup-cmp")
 "setup lsp's 
 lua require("setup-language-servers")
 
-"ssetup telescope 
+"setup telescope 
 lua require("setup-telescope")
 
 
