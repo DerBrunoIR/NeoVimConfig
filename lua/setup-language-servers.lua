@@ -20,7 +20,10 @@ require('lspconfig')['ltex'].setup {
 	settings = {
 		ltex = {
 			--language = "de", for no spell checking
-			language = "de-DE",
+			language = "de",
+			additionalRules = {
+				motherTongue = "en",
+			}
 		},
 	},
 }

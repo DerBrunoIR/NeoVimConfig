@@ -28,6 +28,9 @@ Plug 'hrsh7th/nvim-cmp'
 Plug 'SirVer/ultisnips'
 Plug 'quangnguyen30192/cmp-nvim-ultisnips'
 
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+
 
 call plug#end()
 
@@ -49,4 +52,8 @@ lua require("setup-cmp")
 
 "setup lsp's 
 lua require("setup-language-servers")
+
+"ssetup telescope 
+lua require("setup-telescope")
+
 
