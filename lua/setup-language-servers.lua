@@ -27,7 +27,7 @@ require('lspconfig')['ltex'].setup {
 		},
 	},
 }
-require('lspconfig')['marksman'].setup { capabilities = capabilities }
+--require('lspconfig')['marksman'].setup { capabilities = capabilities }
 require('lspconfig')['pyright'].setup { capabilities = capabilities }
 require('lspconfig')['sqlls'].setup { capabilities = capabilities }
 require('lspconfig')['rust_analyzer'].setup { capabilities = capabilities }
