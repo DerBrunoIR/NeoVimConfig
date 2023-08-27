@@ -40,4 +40,3 @@ local DEFAULT_SETTINGS = {
     handlers = nil,
 }
 
-require("mason-lspconfig").setup(DEFAULT_SETTINGS)

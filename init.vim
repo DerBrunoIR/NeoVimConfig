@@ -41,7 +41,7 @@ lua require("setup-catppuccin")
 lua require("setup-treesitter")
 
 "lsp config
-"lua require("setup-lspconfig")
+lua require("setup-lspconfig")
 "mason 
 lua require("setup-mason")
 "mason-lspconfig
@@ -56,8 +56,4 @@ lua require("setup-language-servers")
 "setup telescope 
 lua require("setup-telescope")
 
-
-" keybinds
-"vim.keymap.nnoremap{'K',     vim.lsp.buf.signature_help, opts}
-"vim.keymap.inoremap{'<C-k>', vim.lsp.buf.signature_help, opts}
 

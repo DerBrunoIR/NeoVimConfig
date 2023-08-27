@@ -11,9 +11,9 @@ require('lspconfig')['cssls'].setup { capabilities = capabilities }
 require('lspconfig')['dockerls'].setup { capabilities = capabilities }
 require('lspconfig')['eslint'].setup { capabilities = capabilities }
 require('lspconfig')['gopls'].setup {
-	-- on_attach = on_attach,
 	capabilities = capabilities,
 	settings = {
+		cmd = {'gopls', '--remote=auto'},
 		gopls = {
 			experimentalPostfixCompletions = true,
 			analyses = {
@@ -48,3 +48,4 @@ require('lspconfig')['pyright'].setup { capabilities = capabilities }
 require('lspconfig')['sqlls'].setup { capabilities = capabilities }
 require('lspconfig')['rust_analyzer'].setup { capabilities = capabilities }
 require('lspconfig')['lua_ls'].setup { capabilities = capabilities }
+
