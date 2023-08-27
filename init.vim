@@ -57,3 +57,7 @@ lua require("setup-language-servers")
 lua require("setup-telescope")
 
 
+" keybinds
+"vim.keymap.nnoremap{'K',     vim.lsp.buf.signature_help, opts}
+"vim.keymap.inoremap{'<C-k>', vim.lsp.buf.signature_help, opts}
+

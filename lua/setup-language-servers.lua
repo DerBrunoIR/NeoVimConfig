@@ -10,7 +10,23 @@ require('lspconfig')['cmake'].setup { capabilities = capabilities }
 require('lspconfig')['cssls'].setup { capabilities = capabilities }
 require('lspconfig')['dockerls'].setup { capabilities = capabilities }
 require('lspconfig')['eslint'].setup { capabilities = capabilities }
-require('lspconfig')['gopls'].setup { capabilities = capabilities }
+require('lspconfig')['gopls'].setup {
+	-- on_attach = on_attach,
+	capabilities = capabilities,
+	settings = {
+		gopls = {
+			experimentalPostfixCompletions = true,
+			analyses = {
+				unusedparams = true,
+				shadow = true,
+			},
+			staticcheck = true,
+		},
+	},
+	init_options = {
+		usePlaceholders = true,
+	}
+}
 require('lspconfig')['jsonls'].setup { capabilities = capabilities }
 require('lspconfig')['jdtls'].setup { capabilities = capabilities }
 require('lspconfig')['tsserver'].setup { capabilities = capabilities }

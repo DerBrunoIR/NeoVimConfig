@@ -14,16 +14,38 @@ cmp.setup({
 	},
 	window = {
 		-- completion = cmp.config.window.bordered(),
-		-- documentation = cmp.config.window.bordered(),
+		documentation = cmp.config.window.bordered(),
 	},
 	mapping = cmp.mapping.preset.insert({
-		['<C-b>'] = cmp.mapping.scroll_docs(-4),
-		['<C-f>'] = cmp.mapping.scroll_docs(4),
-		['<C-Space>'] = cmp.mapping.complete(),
-		['<C-e>'] = cmp.mapping.abort(),
-		['<CR>'] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
+		['<CR>'] = cmp.mapping.confirm({select = false}),
+		['<Tab>'] = cmp.mapping(function(fallback)
+			local col = vim.fn.col('.') - 1
+
+			if cmp.visible() then
+				cmp.select_next_item(select_opts)
+			elseif col == 0 or vim.fn.getline('.'):sub(col, col):match('%s') then
+				fallback()
+			else
+				cmp.complete()
+			end
+		end, {'i', 's'}),
+		['<S-Tab>'] = cmp.mapping(function(fallback)
+			if cmp.visible() then
+				cmp.select_prev_item(select_opts)
+			else
+				fallback()
+			end
+		end, {'i', 's'}),
+		['<Esc>'] = cmp.mapping.abort(),
+		['<C-u>'] = cmp.mapping.scroll_docs(-4),
+		['<C-d>'] = cmp.mapping.scroll_docs(4),
+		['<Up>'] = cmp.mapping.select_prev_item(select_opts),
+		['<Down>'] = cmp.mapping.select_next_item(select_opts),
+		['<C-p>'] = cmp.mapping.select_prev_item(select_opts),
+		['<C-n>'] = cmp.mapping.select_next_item(select_opts),
 	}),
 	sources = cmp.config.sources({
+		{ name = 'path' },
 		{ name = 'nvim_lsp' },
 		-- { name = 'vsnip' }, -- For vsnip users.
 		-- { name = 'luasnip' }, -- For luasnip users.
@@ -31,7 +53,7 @@ cmp.setup({
 		-- { name = 'snippy' }, -- For snippy users.
 	}, {
 		{ name = 'buffer' },
-	})
+	}),
 })
 
 -- Set configuration for specific filetype.
