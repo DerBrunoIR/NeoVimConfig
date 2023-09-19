@@ -7,8 +7,8 @@ set number relativenumber
 
 inoremap jk <Esc>
 inoremap kj <Esc>
-vnoremap jk <Esc>
-vnoremap kj <Esc>
+"vnoremap jk <Esc>
+"vnoremap kj <Esc>
 
 call plug#begin()
 Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
