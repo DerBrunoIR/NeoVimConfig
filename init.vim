@@ -1,5 +1,6 @@
 
 
+
 set tabstop=4
 set shiftwidth=4
 
@@ -9,6 +10,8 @@ inoremap jk <Esc>
 inoremap kj <Esc>
 "vnoremap jk <Esc>
 "vnoremap kj <Esc>
+
+set completeopt=menu,menuone
 
 call plug#begin()
 Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
