@@ -13,7 +13,7 @@ local DEFAULT_SETTINGS = {
 		"dockerls",
 		"eslint",
 		"gopls",
-		-- "hls",
+		"hls",
 		"jsonls",
 		"jdtls",
 		"tsserver",
@@ -33,10 +33,12 @@ local DEFAULT_SETTINGS = {
     --   - { exclude: string[] }: All servers set up via lspconfig, except the ones provided in the list, are automatically installed.
     --       Example: automatic_installation = { exclude = { "rust_analyzer", "solargraph" } }
     ---@type boolean
-    automatic_installation = false,
+    automatic_installation = true,
 
     -- See `:h mason-lspconfig.setup_handlers()`
     ---@type table<string, fun(server_name: string)>?
     handlers = nil,
 }
+
+require("mason-lspconfig").setup(DEFAULT_SETTINGS)
 
