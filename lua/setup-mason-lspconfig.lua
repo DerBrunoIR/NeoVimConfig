@@ -1,28 +1,10 @@
 
 local DEFAULT_SETTINGS = {
+	-- Add languages from 'https://github.com/williamboman/mason-lspconfig.nvim?tab=readme-ov-file#available-lsp-servers' here:
     -- A list of servers to automatically install if they're not already installed. Example: { "rust_analyzer@nightly", "lua_ls" }
     -- This setting has no relation with the `automatic_installation` setting.
     ---@type string[]
     ensure_installed = {
-		"asm_lsp",
-		"clangd",
-		"awk_ls",
-		"bashls",
-		"cmake",
-		"cssls",
-		"dockerls",
-		"eslint",
-		"gopls",
-		"hls",
-		"jsonls",
-		"jdtls",
-		"tsserver",
-		"ltex",
-		--"marksman", ltex includes markdown
-		"pyright",
-		"sqlls",
-		"rust_analyzer",
-		"lua_ls",
 	},
 
     -- Whether servers that are set up (via lspconfig) should be automatically installed if they're not already installed.
