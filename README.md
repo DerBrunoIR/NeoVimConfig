@@ -1,5 +1,6 @@
 This repo contains my nvim configuration.
 The following plugins are configured: 
+- <PluginName> (my opinion until now)
 - catppuccin
 - cmp-buffer
 - cmp-cmdline
@@ -13,4 +14,4 @@ The following plugins are configured:
 - nvim-treesitter
 - plenary.nvim
 - telescope.nvim (unused)
-- ultisnips (confusing)
+- ultisnips (confusing, have to improve config)
