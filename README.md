@@ -1,6 +1,6 @@
 This repo contains my nvim configuration.
 The following plugins are configured: 
-- <PluginName> (my opinion until now)
+- \<PluginName\> (my opinion until now)
 - catppuccin
 - cmp-buffer
 - cmp-cmdline
