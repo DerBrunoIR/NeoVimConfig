@@ -34,7 +34,7 @@ require('lspconfig')['bashls'].setup { capabilities = capabilities }
 require('lspconfig')['awk_ls'].setup { capabilities = capabilities }
 require('lspconfig')['marksman'].setup { capabilities = capabilities }
 require('lspconfig')['dockerls'].setup { capabilities = capabilities }
-require('lspconfig')['compose_language_service'].setup { capabilities = capabilities }
+require('lspconfig')['docker_compose_language_service'].setup { capabilities = capabilities }
 -- documentation for ltex at https://valentjn.github.io/ltex/settings.html
 require('lspconfig')['ltex'].setup {
 	capabilities = capabilities,
