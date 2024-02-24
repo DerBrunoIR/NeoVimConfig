@@ -2,7 +2,6 @@
 -- Set up lspconfig.
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
-require('lspconfig')['asm_lsp'].setup { capabilities = capabilities }
 require('lspconfig')['clangd'].setup { capabilities = capabilities }
 require('lspconfig')['gopls'].setup {
 	capabilities = capabilities,
@@ -31,7 +30,6 @@ require('lspconfig')['eslint'].setup { capabilities = capabilities }
 require('lspconfig')['cmake'].setup { capabilities = capabilities }
 require('lspconfig')['autotools_ls'].setup { capabilities = capabilities }
 require('lspconfig')['bashls'].setup { capabilities = capabilities }
-require('lspconfig')['awk_ls'].setup { capabilities = capabilities }
 require('lspconfig')['marksman'].setup { capabilities = capabilities }
 require('lspconfig')['dockerls'].setup { capabilities = capabilities }
 require('lspconfig')['docker_compose_language_service'].setup { capabilities = capabilities }
