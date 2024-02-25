@@ -31,7 +31,11 @@ Plug 'quangnguyen30192/cmp-nvim-ultisnips'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 
+Plug 'ggandor/leap.nvim'
+
 call plug#end()
+
+lua require('leap').create_default_mappings()
 
 "catppuccin 
 lua require("setup-catppuccin")
