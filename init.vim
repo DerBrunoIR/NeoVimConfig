@@ -1,6 +1,8 @@
 set tabstop=4
 set shiftwidth=4
 
+set splitright
+set splitbelow
 set number relativenumber
 
 inoremap jk <Esc>
@@ -35,7 +37,7 @@ Plug 'ggandor/leap.nvim'
 
 call plug#end()
 
-lua require('leap').create_default_mappings()
+lua require('setup-leap')
 
 "catppuccin 
 lua require("setup-catppuccin")
