@@ -10,6 +10,8 @@ inoremap kj <Esc>
 "vnoremap jk <Esc>
 "vnoremap kj <Esc>
 
+map <space>e :lua vim.diagnostic.open_float(0, {scope="line"})<CR>
+
 set completeopt=menu,menuone
 
 call plug#begin()
