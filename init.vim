@@ -1,12 +1,16 @@
 set tabstop=4
 set shiftwidth=4
 
+set splitright
+set splitbelow
 set number relativenumber
 
 inoremap jk <Esc>
 inoremap kj <Esc>
 "vnoremap jk <Esc>
 "vnoremap kj <Esc>
+
+map <space>e :lua vim.diagnostic.open_float(0, {scope="line"})<CR>
 
 set completeopt=menu,menuone
 
@@ -35,7 +39,7 @@ Plug 'ggandor/leap.nvim'
 
 call plug#end()
 
-lua require('leap').create_default_mappings()
+lua require('setup-leap')
 
 "catppuccin 
 lua require("setup-catppuccin")
