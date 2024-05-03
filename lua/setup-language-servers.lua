@@ -65,7 +65,7 @@ require('lspconfig')['ltex'].setup {
 	settings = {
 		ltex = {
 			enabled = {
-				'latex', 'markdown', 'bibtex',
+				'latex', 'markdown', 'bibtex', 'tex',
 			},
 			--language = "de", for no spell checking
 			language = "de",
