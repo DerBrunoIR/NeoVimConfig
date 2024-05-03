@@ -7,6 +7,9 @@ set number relativenumber
 
 inoremap jk <Esc>
 inoremap kj <Esc>
+inoremap JK <Esc>
+inoremap Jk <Esc>
+inoremap jK <Esc>
 "vnoremap jk <Esc>
 "vnoremap kj <Esc>
 
