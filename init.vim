@@ -6,12 +6,13 @@ set splitbelow
 set number relativenumber
 
 inoremap jk <Esc>
-inoremap kj <Esc>
-inoremap JK <Esc>
-inoremap Jk <Esc>
 inoremap jK <Esc>
-"vnoremap jk <Esc>
-"vnoremap kj <Esc>
+inoremap Jk <Esc>
+inoremap Jk <Esc>
+inoremap kj <Esc>
+
+set tabstop=4
+set shiftwidth=4
 
 map <space>e :lua vim.diagnostic.open_float(0, {scope="line"})<CR>
 
