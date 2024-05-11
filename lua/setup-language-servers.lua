@@ -2,7 +2,6 @@
 -- Set up lspconfig.
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
-require('lspconfig')['asm_lsp'].setup { capabilities = capabilities }
 require('lspconfig')['clangd'].setup { capabilities = capabilities }
 require('lspconfig')['gopls'].setup {
 	capabilities = capabilities,
@@ -23,7 +22,6 @@ require('lspconfig')['gopls'].setup {
 }
 require('lspconfig')['jdtls'].setup { capabilities = capabilities }
 require('lspconfig')['pyright'].setup { capabilities = capabilities }
-require('lspconfig')['rust_analyzer'].setup { capabilities = capabilities }
 require('lspconfig')['lua_ls'].setup {
   settings = {
     Lua = {
@@ -77,3 +75,4 @@ require('lspconfig')['ltex'].setup {
 }
 require('lspconfig')['sqlls'].setup { capabilities = capabilities }
 require('lspconfig')['cssls'].setup { capabilities = capabilities }
+
