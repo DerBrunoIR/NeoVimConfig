@@ -22,7 +22,8 @@ require('lspconfig')['gopls'].setup {
 	}
 }
 require('lspconfig')['jdtls'].setup { capabilities = capabilities }
-require('lspconfig')['pyright'].setup { capabilities = capabilities }
+-- require('lspconfig')['pyright'].setup { capabilities = capabilities }
+require('lspconfig')['jedi_language_server'].setup { capabilities = capabilities }
 require('lspconfig')['rust_analyzer'].setup { capabilities = capabilities }
 require('lspconfig')['lua_ls'].setup {
   settings = {
