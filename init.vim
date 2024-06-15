@@ -37,7 +37,7 @@ Plug 'SirVer/ultisnips'
 Plug 'quangnguyen30192/cmp-nvim-ultisnips'
 
 Plug 'nvim-lua/plenary.nvim'
-"Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-telescope/telescope.nvim'
 
 "Plug 'ggandor/leap.nvim'
 
@@ -66,6 +66,6 @@ lua require("setup-cmp")
 lua require("setup-language-servers")
 
 "setup telescope 
-"lua require("setup-telescope")
+lua require("setup-telescope")
 
 
