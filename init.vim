@@ -38,6 +38,7 @@ Plug 'quangnguyen30192/cmp-nvim-ultisnips'
 
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
+Plug 'kiyoon/telescope-insert-path.nvim'
 
 "Plug 'ggandor/leap.nvim'
 

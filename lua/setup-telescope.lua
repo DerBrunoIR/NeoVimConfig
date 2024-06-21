@@ -1,4 +1,6 @@
 
+local actions = require('telescope.actions')
+local path_actions = require('telescope_insert_path')
 
 require('telescope').setup{
   defaults = {
@@ -9,7 +11,13 @@ require('telescope').setup{
         -- map actions.which_key to <C-h> (default: <C-/>)
         -- actions.which_key shows the mappings for your picker,
         -- e.g. git_{create, delete, ...}_branch for the git_branches picker
-        ["<C-h>"] = "which_key"
+        -- ["<C-h>"] = "which_key",
+	 },
+	 n = {
+        ["["] = path_actions.insert_relpath_normal,
+        ["]"] = path_actions.insert_abspath_normal,
+        ["{"] = path_actions.insert_relpath_insert,
+        ["}"] = path_actions.insert_abspath_insert,
       }
     }
   },
