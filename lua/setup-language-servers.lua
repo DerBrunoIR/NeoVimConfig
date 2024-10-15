@@ -21,7 +21,7 @@ require('lspconfig')['gopls'].setup {
 	}
 }
 require('lspconfig')['jedi_language_server'].setup { capabilities = capabilities }
-require('lspconfig')['jdtls'].setup {}
+-- require('lspconfig')['jdtls'].setup {}
 require('lspconfig')['lua_ls'].setup {
   settings = {
     Lua = {
