@@ -66,9 +66,10 @@ require('lspconfig')['ltex'].setup {
 				'latex', 'markdown', 'bibtex', 'tex',
 			},
 			--language = "de", for no spell checking
-			language = "de",
+			-- language = "de-DE",
+			language = "en-US",
 			additionalRules = {
-				motherTongue = "en",
+				motherTongue = "de-DE",
 			}
 		},
 	},
