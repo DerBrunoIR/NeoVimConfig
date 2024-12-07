@@ -42,6 +42,9 @@ Plug 'kiyoon/telescope-insert-path.nvim'
 
 "Plug 'ggandor/leap.nvim'
 
+Plug 'Treeniks/isabelle-lsp.nvim'
+Plug 'Treeniks/isabelle-syn.nvim'
+
 call plug#end()
 
 " setup leap

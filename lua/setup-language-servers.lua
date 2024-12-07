@@ -77,3 +77,7 @@ require('lspconfig')['sqlls'].setup {}
 require('lspconfig')['cssls'].setup {}
 require('lspconfig')['kotlin_language_server'].setup {}
 
+require('isabelle-lsp').setup({
+	isabelle_path = '/home/bruno/Sync/Uni/InformatikBSc/24WiSe/Bachelorarbeit/Isabelle_lsp/bin/isabelle',
+})
+require('lspconfig')['isabelle'].setup({})
