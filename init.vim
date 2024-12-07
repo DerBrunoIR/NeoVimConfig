@@ -5,11 +5,11 @@ set splitright
 set splitbelow
 set number relativenumber
 
-inoremap jk <Esc>
-inoremap jK <Esc>
-inoremap Jk <Esc>
-inoremap Jk <Esc>
-inoremap kj <Esc>
+"inoremap jk <Esc>
+"inoremap jK <Esc>
+"inoremap Jk <Esc>
+"inoremap Jk <Esc>
+"inoremap kj <Esc>
 
 set tabstop=4
 set shiftwidth=4

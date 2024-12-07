@@ -21,7 +21,7 @@ require('lspconfig')['gopls'].setup {
 	}
 }
 require('lspconfig')['jedi_language_server'].setup { capabilities = capabilities }
-require('lspconfig')['jdtls'].setup {}
+-- require('lspconfig')['jdtls'].setup {}
 require('lspconfig')['lua_ls'].setup {
   settings = {
     Lua = {
@@ -66,9 +66,10 @@ require('lspconfig')['ltex'].setup {
 				'latex', 'markdown', 'bibtex', 'tex',
 			},
 			--language = "de", for no spell checking
-			language = "de",
+			-- language = "de-DE",
+			language = "en-US",
 			additionalRules = {
-				motherTongue = "en",
+				motherTongue = "de-DE",
 			}
 		},
 	},
