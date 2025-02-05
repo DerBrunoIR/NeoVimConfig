@@ -45,7 +45,15 @@ Plug 'kiyoon/telescope-insert-path.nvim'
 Plug 'Treeniks/isabelle-lsp.nvim'
 Plug 'Treeniks/isabelle-syn.nvim'
 
+Plug 'kylechui/nvim-surround'
+
 call plug#end()
+
+""" test """
+
+lua require("nvim-surround").setup()
+
+""" SETUP """
 
 " setup leap
 "lua require('setup-leap')
