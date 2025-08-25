@@ -50,6 +50,7 @@ require('lspconfig')['lua_ls'].setup {
 }
 require('lspconfig')['vimls'].setup {}
 require('lspconfig')['eslint'].setup {}
+require('lspconfig')['ts_ls'].setup {}
 
 require('lspconfig')['cmake'].setup {}
 require('lspconfig')['autotools_ls'].setup {}
