@@ -36,7 +36,7 @@ Plug 'hrsh7th/nvim-cmp'
 Plug 'SirVer/ultisnips'
 Plug 'quangnguyen30192/cmp-nvim-ultisnips'
 
-Plug 'ray-x/lsp_signature.nvim'
+" Plug 'ray-x/lsp_signature.nvim'
 
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
@@ -74,7 +74,7 @@ lua require("setup-mason")
 lua require("setup-mason-lspconfig")
 
 " lsp signature
-lua require("setup-lsp-signature")
+" lua require("setup-lsp-signature")
 
 "cmp
 lua require("setup-cmp")
