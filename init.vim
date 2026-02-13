@@ -13,6 +13,7 @@ set number relativenumber
 
 set tabstop=4
 set shiftwidth=4
+set expandtab
 
 map <space>e :lua vim.diagnostic.open_float(0, {scope="line"})<CR>
 
