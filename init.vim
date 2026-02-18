@@ -50,6 +50,8 @@ Plug 'Treeniks/isabelle-syn.nvim'
 
 Plug 'kylechui/nvim-surround'
 
+Plug 'stevearc/oil.nvim'
+
 call plug#end()
 
 """ test """
@@ -86,4 +88,4 @@ lua require("setup-language-servers")
 "setup telescope 
 lua require("setup-telescope")
 
-
+lua require("oil").setup()
