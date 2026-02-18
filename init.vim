@@ -88,4 +88,4 @@ lua require("setup-language-servers")
 "setup telescope 
 lua require("setup-telescope")
 
-lua require("oil").setup()
+lua require("setup-oil")
